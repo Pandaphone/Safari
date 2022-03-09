@@ -8,3 +8,7 @@
   height: 500px;
   border: 5px solid white;
 }
+
+#splashBtn {
+  border: 3px solid white;
+}
