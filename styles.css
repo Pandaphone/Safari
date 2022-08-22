@@ -39,6 +39,7 @@
   border: 5px solid white;
   margin: auto;
   text-align: center;
+  /*overflow: hidden;*/
 }
 
 #title {
@@ -78,4 +79,52 @@
   position: relative;
   top: 450px;
   left: 700px;
+  animation: moving 4s infinite linear;
+}
+
+.enemy2 {
+  width: 50px;
+  height: 30px;
+  background-color: blue;
+  position: relative;
+  top: 420px;
+  left: 600px;
+  animation: moving2 10s infinite linear;
+}
+
+.enemy3 {
+  width: 50px;
+  height: 30px;
+  background-color: green;
+  position: relative;
+  top: 390px;
+  left: 500px;
+  animation: moving3 15s infinite linear;
+}
+
+@keyframes moving {
+  0% {
+    left: 700px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes moving2 {
+  0% {
+    left: 700px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes moving3 {
+  0% {
+    left: 700px;
+  }
+  100% {
+    left: 0px;
+  }
 }
