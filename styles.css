@@ -1,3 +1,5 @@
+/*SPLASH PAGE CSS*/
+
 @font-face {
   font-family: "VCR-OSD-Mono";
   src: url("/assets/VCR_OSD_MONO_1.001.ttf") format("truetype");
@@ -19,10 +21,20 @@
   background-color: black;
   font-family: VCR-OSD-Mono;
   color: white;
+  padding: 0px;
+  margin: 0px;
 }
 
 .gameplay-container {
   width: 500px;
+  height: 500px;
+  border: 5px solid white;
+  margin: auto;
+  text-align: center;
+}
+
+.gameplay-container2 {
+  width: 750px;
   height: 500px;
   border: 5px solid white;
   margin: auto;
@@ -50,44 +62,20 @@
   height: 55px;
 }
 
-.battleUi {
-  display: inline;
+/*CHARACTER CSS*/
+.car {
+  width: 40px;
+  height: 20px;
+  background-color: yellow;
+  position: relative;
+  top: 480px;
 }
 
-.battleBtns {
-  width: 300px;
-  height: 75px;
-  border: 3px solid;
-}
-
-.atkBtn {
+.enemy1 {
+  width: 50px;
+  height: 30px;
   background-color: red;
-  border-color: darkred;
-}
-
-.atkBtn:hover {
-  border-color: coral;
-}
-
-.atkBtn:active {
-  border-color: chartreuse;
-}
-
-.defBtn {
-  background-color: blue;
-  border-color: aqua;
-}
-
-.defBtn:hover {
-  border-color: coral;
-}
-
-.defBtn:active {
-  border-color: chartreuse;
-}
-
-.txt-display {
-  width: 200px;
-  height: 150px;
-  border: 5px solid white;
+  position: relative;
+  top: 450px;
+  left: 700px;
 }
