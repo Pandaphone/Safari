@@ -25,7 +25,7 @@
   margin: 0px;
 }
 
-.gameplay-container {
+.splash-container {
   width: 500px;
   height: 500px;
   border: 5px solid white;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.gameplay-container2 {
+.gameplay-container {
   width: 750px;
   height: 500px;
   border: 5px solid white;
@@ -67,7 +67,8 @@
 .car {
   width: 40px;
   height: 20px;
-  background-color: yellow;
+  background-image: url("./assets/images/jeep.png");
+ 
   position: relative;
   top: 480px;
 }
