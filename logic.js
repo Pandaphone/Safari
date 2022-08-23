@@ -1,7 +1,7 @@
 let char = document.getElementById("char");
-let enemy1 = document.getElementById("enemy1");
-let enemy2 = document.getElementById("enemy2");
-let enemy3 = document.getElementById("enemy3");
+let enemy10 = document.getElementById("enemy1");
+let enemy20 = document.getElementById("enemy2");
+let enemy30 = document.getElementById("enemy3");
 
 
 function jumpFunc(){
@@ -13,13 +13,13 @@ function jumpFunc(){
 }
 
 let statusCheck = setInterval(function(){
-    charTop = window.getComputedStyle('char').getPropertyValue('top');
-    enemyLeft = window.getComputedStyle('enemy1').getPropertyValue('left');
-    enemyLeft2 = window.getComputedStyle('enemy2').getPropertyValue('left');
-    enemyLeft3 = window.getComputedStyle('enemy3').getPropertyValue('left');
+    let charTop = parseInt(window.getComputedStyle(char).getPropertyValue('top'));
+    let enemyLeft = parseInt(window.getComputedStyle(enemy10).getPropertyValue('left'));
+    //enemyLeft2 = window.getComputedStyle('enemy2').getPropertyValue('left');
+    //enemyLeft3 = window.getComputedStyle('enemy3').getPropertyValue('left');
 
-    if(charTop == '20px' && enemyLeft == '0px'){
-        alert('YOU LOSE LOL');
+    if(enemyLeft > 0 && enemyLeft < 30 && charTop >= 380){
+        alert('YOU LOSE LOL')
     }
    /* else if(charTop == '20px' && enemyLeft2 == '0px){
 
@@ -31,7 +31,7 @@ let statusCheck = setInterval(function(){
 
     }
     */
-}, 5)
+}, 10)
 
 function myFunction() {
     let popupLogic = document.getElementById("popup");
