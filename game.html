@@ -9,20 +9,35 @@
   </head>
   <body>
     
-    <div class="gameplay-container">
-      <div id="car"></div>
+    <div class="gameplay-container" onclick="jumpFunc()">
+      <div id="char"></div>
       <div id="enemy1"></div>
       <div id="enemy2"></div>
       <div id="enemy3"></div>
       <div class="sliding-background"></div>
     </div>
     <div class="bottomDiv">
+     
     <div class="resetButtons">
-      
-      <button class="resetButton">Reset from Splash!</button>
-      <button class="resetButton">Reset the Page!</button>
+      <a href="index.html">
+        <button class="resetButton">Reset from Splash!</button>
+      </a>
+
+      <a href="game.html">
+        <button class="resetButton">Reset the Page!</button>
+      </a>
+      </div>
+      <div class="info">
+        <h2>A game by Shawn Greene!</h2>
     </div>
   </div>
   </body>
   <script src="logic.js"></script>
 </html>
+
+
+
+
+<div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+</div>
