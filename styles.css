@@ -42,6 +42,25 @@
   overflow: hidden;
 }
 
+.sliding-background {
+  position: relative;
+  z-index: 1;
+  top: -110px;
+  background: url("./assets/images/image.jpg") repeat-x;
+  height: 500px;
+  width: 5076px; /* The image width times 3 */
+  animation: slide 25s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0); /* The image width */
+  }
+}
+
 #title {
   font-size: 70px;
   margin-top: 150px;
@@ -65,10 +84,10 @@
 
 /*CHARACTER CSS*/
 .car {
+  background-color: aqua;
   width: 40px;
   height: 20px;
-  background-image: url("./assets/images/jeep.png");
- 
+  z-index: 2;
   position: relative;
   top: 480px;
 }
@@ -78,6 +97,7 @@
   height: 30px;
   background-color: red;
   position: relative;
+  z-index: 2;
   top: 450px;
   left: 700px;
   animation: moving 4s infinite linear;
@@ -88,6 +108,7 @@
   height: 30px;
   background-color: blue;
   position: relative;
+  z-index: 2;
   top: 420px;
   left: 600px;
   animation: moving2 8s infinite linear;
@@ -97,6 +118,7 @@
   width: 50px;
   height: 30px;
   background-color: green;
+  z-index: 2;
   position: relative;
   top: 390px;
   left: 500px;
