@@ -39,7 +39,7 @@
   border: 5px solid white;
   margin: auto;
   text-align: center;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 #title {
@@ -89,7 +89,7 @@
   position: relative;
   top: 420px;
   left: 600px;
-  animation: moving2 10s infinite linear;
+  animation: moving2 8s infinite linear;
 }
 
 .enemy3 {
@@ -99,7 +99,7 @@
   position: relative;
   top: 390px;
   left: 500px;
-  animation: moving3 15s infinite linear;
+  animation: moving3 12s infinite linear;
 }
 
 @keyframes moving {
@@ -113,7 +113,7 @@
 
 @keyframes moving2 {
   0% {
-    left: 700px;
+    left: 1000px;
   }
   100% {
     left: 0px;
@@ -122,7 +122,7 @@
 
 @keyframes moving3 {
   0% {
-    left: 700px;
+    left: 1400px;
   }
   100% {
     left: 0px;
