@@ -13,10 +13,24 @@ function jumpFunc(){
 }
 
 let statusCheck = setInterval(function(){
-    let elem = document.querySelector('div');
-let rect = elem.getBoundingClientRect();
-console.log("x: "+ rect.x);
-console.log("y: "+ rect.y);
+    charTop = window.getComputedStyle('char').getPropertyValue('top');
+    enemyLeft = window.getComputedStyle('enemy1').getPropertyValue('left');
+    enemyLeft2 = window.getComputedStyle('enemy2').getPropertyValue('left');
+    enemyLeft3 = window.getComputedStyle('enemy3').getPropertyValue('left');
+
+    if(charTop == '20px' && enemyLeft == '0px'){
+        alert('YOU LOSE LOL');
+    }
+   /* else if(charTop == '20px' && enemyLeft2 == '0px){
+
+    }
+    else if(charTop == '20px' && enemyLeft3 == '0px){
+        
+    }
+    else{
+
+    }
+    */
 }, 5)
 
 function myFunction() {
