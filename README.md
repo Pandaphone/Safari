@@ -1,6 +1,6 @@
 # Safari
 
-This game is my submission for my first Milestone project!
+This game is my submission for my first Milestone project! A city has been devastated by an invasion of mutant bugs! Now it's up to you to get yourself out or die...
 
 # How to Play
 
