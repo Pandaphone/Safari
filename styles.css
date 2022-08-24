@@ -1,4 +1,4 @@
-/*PAGE CSS*/
+/*SPLASH PAGE CSS*/
 
 @font-face {
   font-family: "VCR-OSD-Mono";
@@ -35,26 +35,6 @@
   top: 125px;
 }
 
-.gameplay-container {
-  top: 50px;
-  width: 750px;
-  height: 400px;
-  border: 5px solid white;
-  margin: auto;
-  text-align: center;
-  overflow: hidden;
-}
-
-.sliding-background {
-  position: relative;
-  z-index: 1;
-  top: -110px;
-  background: url("./assets/images/image.jpg") repeat-x;
-  height: 500px;
-  width: 5076px; /* The image width times 3 */
-  animation: slide 25s linear infinite;
-}
-
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
@@ -85,9 +65,33 @@
   height: 55px;
 }
 
+/*END OF SPLASH PAGE CSS*/
+
+
+/*GAME PAGE CSS*/
+
+.gameplay-container {
+  top: 50px;
+  width: 750px;
+  height: 400px;
+  border: 5px solid white;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.sliding-background {
+  position: relative;
+  z-index: 1;
+  top: -110px;
+  background: url("./assets/images/image.jpg") repeat-x;
+  height: 500px;
+  width: 5076px; /* The image width times 3 */
+  animation: slide 25s linear infinite;
+}
+
 .bottomDiv {
   margin: auto;
-  border: 3px solid white;
   width: 1250px;
   height: 360px;
   display: flex;
@@ -96,24 +100,44 @@
   align-items: center;
 }
 
-.info
-
 .resetButtons {
   display: flex;
   flex-direction: column;
 }
 
-.resetButton {
+.resetButton, .gameBtn {
   border: 3px solid white;
   width: 275px;
   height: 100px;
   margin-bottom: 25px;
 }
 
-.resetButton:active {
+.resetButton:active, .gameBtn:active {
   width: 205px;
   height: 55px;
 }
+
+/*END OF GAME PAGE CSS*/
+
+/***********************************POPUP CSS*****************************/
+#popupB {
+    position: absolute;
+    height: 1000px;
+    width: 1500px;
+    top: 0px;
+    background-color: black;
+    cursor: pointer;
+    opacity: 0;
+    text-align: center;
+    color: #fff;
+}
+
+#popup {
+  position: relative;
+  top: 125px;
+}
+
+/*END OF POPUP CSS*/
 
 /*CHARACTER CSS*/
 #char {
@@ -144,7 +168,7 @@
   z-index: 2;
   top: 350px;
   left: 700px;
-  animation: moving 5s infinite linear;
+  animation: moving 7s infinite linear;
 }
 
 #enemy2 {
@@ -166,7 +190,7 @@
   position: relative;
   top: 290px;
   left: 500px;
-  animation: moving3 12s infinite linear;
+  animation: moving3 13s infinite linear;
 }
 
 @keyframes moving {
@@ -194,55 +218,4 @@
   100% {
     left: 0px;
   }
-}
-
-
-
-
-
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 500px;
-  height: 500px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 8px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 1s;
-  animation: fadeIn 0.25s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
-}
-
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
 }
