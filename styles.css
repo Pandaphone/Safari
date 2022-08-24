@@ -141,9 +141,10 @@
 
 /*CHARACTER CSS*/
 #char {
-  background-color: aqua;
-  width: 30px;
-  height: 20px;
+  /*background-color: aqua;*/
+  background-image: url(./assets/images/Cars3.1.png);
+  width: 71px;
+  height: 30px;
   z-index: 2;
   position: relative;
   top: 380px;

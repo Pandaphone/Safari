@@ -29,13 +29,13 @@ let statusCheck = setInterval(function(){
     let enemyLeft2 = parseInt(window.getComputedStyle(enemy20).getPropertyValue('left'));
     let enemyLeft3 = parseInt(window.getComputedStyle(enemy30).getPropertyValue('left'));
 
-    if(enemyLeft > 0 && enemyLeft < 30 && charTop >= 360){
+    if(enemyLeft > 0 && enemyLeft < 20 && charTop >= 360){
         popupPopup()
     }
-    else if(enemyLeft2 > 0 && enemyLeft2 < 30 && charTop >= 360){
+    else if(enemyLeft2 > 0 && enemyLeft2 < 20 && charTop >= 360){
         popupPopup()
     }
-    else if(enemyLeft3 > 0 && enemyLeft3 < 30 && charTop >= 360){
+    else if(enemyLeft3 > 0 && enemyLeft3 < 20 && charTop >= 360){
         popupPopup()
     }
     else{
