@@ -15,22 +15,22 @@ function jumpFunc(){
 let statusCheck = setInterval(function(){
     let charTop = parseInt(window.getComputedStyle(char).getPropertyValue('top'));
     let enemyLeft = parseInt(window.getComputedStyle(enemy10).getPropertyValue('left'));
-    //enemyLeft2 = window.getComputedStyle('enemy2').getPropertyValue('left');
-    //enemyLeft3 = window.getComputedStyle('enemy3').getPropertyValue('left');
+    let enemyLeft2 = parseInt(window.getComputedStyle(enemy20).getPropertyValue('left'));
+    let enemyLeft3 = parseInt(window.getComputedStyle(enemy30).getPropertyValue('left'));
 
-    if(enemyLeft > 0 && enemyLeft < 30 && charTop >= 380){
+    if(enemyLeft > 0 && enemyLeft < 30 && charTop >= 360){
         alert('YOU LOSE LOL')
     }
-   /* else if(charTop == '20px' && enemyLeft2 == '0px){
-
+    else if(enemyLeft2 > 0 && enemyLeft2 < 30 && charTop >= 360){
+        alert('YOU LOSE LOL')
     }
-    else if(charTop == '20px' && enemyLeft3 == '0px){
-        
+    else if(enemyLeft3 > 0 && enemyLeft3 < 30 && charTop >= 360){
+        alert('YOU LOSE LOL')
     }
     else{
-
+        console.log('Moving along as usual')
     }
-    */
+    
 }, 10)
 
 function myFunction() {
